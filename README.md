@@ -68,7 +68,7 @@ When you're done:
 Please submit your solution within **3 days** of receiving the challenge.
 
 ---
-##❓ Questions?
+## ❓ Questions?
 Feel free to reach out to us if you have any doubts, questions, or run into technical issues.
 
 📧 Email: <jigar@bookanartist.co>
