@@ -51,7 +51,7 @@ These are optional but appreciated:
 To get started with the challenge, clone this repository, install dependencies, and run the app locally:
 
 ```bash
-git clone https://gitlab.com/parekhjigar/react-to-do-app-challenge.git
+git clone https://gitlab.com/parekhjigar/react-todo-app-challenge.git
 cd react-to-do-app-challenge
 npm install
 npm start
