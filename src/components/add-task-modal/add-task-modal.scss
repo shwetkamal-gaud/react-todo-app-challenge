@@ -1,0 +1,50 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur('32px');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.form-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.close-btn{
+    border: 1px solid gray;
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    &:hover{
+        background-color: transparent;
+    }
+}
+
+.close-button {
+    background: #ff1b1b;
+
+    &:hover {
+        background: #c81818;
+    }
+}

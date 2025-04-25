@@ -1,31 +1,20 @@
 import * as React from 'react';
 import { TodosContext } from '../../todo-context';
 import './todo-form.scss';
+import { AddTaskModal } from '../add-task-modal';
 
 export const TodoForm = () => {
-  const { todos, setTodos } = React.useContext(TodosContext);
-  const [task, setTask] = React.useState('');
+  const { setIsModalOpen, setTaskToEdit } = React.useContext(TodosContext);
 
-  const handleAddTodo = () => {
-    // Fix the app to display list of all tasks
-  };
-
-  const handleKeyUp = (e) => {
-    if (e.keyCode === 13) {
-      handleAddTodo();
-    }
+  const openAddModal = () => {
+    setTaskToEdit(null);
+    setIsModalOpen(true);
   };
 
   return (
     <div className="todo-form">
-      <input
-        placeholder="Enter new task"
-        value={task}
-        onChange={(e) => setTask(e.target.value)}
-        onKeyUp={handleKeyUp}
-      />
-      <button type="button" onClick={handleAddTodo}>
-        Add task
+      <button type="button" className="add-button" onClick={openAddModal}>
+        Add Task
       </button>
     </div>
   );

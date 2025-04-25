@@ -51,6 +51,7 @@
     "workbox-webpack-plugin": "5.1.4"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "eslint": "^7.11.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-react-app": "^6.0.0",
@@ -64,9 +65,9 @@
     "eslint-webpack-plugin": "^2.5.2"
   },
   "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider node scripts/start.js",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider node scripts/build.js",
+    "test": "cross-env NODE_OPTIONS=--openssl-legacy-provider node scripts/test.js"
   },
   "eslintConfig": {
     "extends": [

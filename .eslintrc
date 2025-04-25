@@ -3,7 +3,9 @@
     "airbnb/hooks",
     "airbnb"
   ],
-  "plugins": ["react"],
+  "plugins": [
+    "react"
+  ],
   "settings": {
     "import/resolver": {
       "node": {
@@ -22,11 +24,20 @@
       "always-multiline"
     ],
     "consistent-return": "error",
-    "curly": ["error", "all"],
-    "indent": [0, 2, { "SwitchCase": 1}],
+    "curly": [
+      "error",
+      "all"
+    ],
+    "indent": [
+      0,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
     "max-len": [
       "error",
-      80,
+      100,
       2,
       {
         "ignoreUrls": true,
@@ -46,6 +57,10 @@
     "eol-last": "warn",
     "import/prefer-default-export": "off",
     "react/prop-types": "off",
-    "no-unused-vars": "warn"
+    "no-unused-vars": "warn",
+    "linebreak-style": [
+      "error",
+      "windows"
+    ]
   }
 }

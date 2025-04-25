@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { TodoForm } from './components/todo-form';
 import { TodoList } from './components/todo-list';
-import { TodoResults } from './components/todo-results';
+
 import { TodosContext } from './todo-context';
 import './index.scss';
 
@@ -64,14 +64,36 @@ const todosTemplate = [
 ];
 
 export const App = () => {
-  const [todos, setTodos] = React.useState([]);
-
+  const [todos, setTodos] = React.useState(todosTemplate);
+  const [filter, setFilter] = React.useState('all');
+  const [searchQuery, setSearchQuery] = React.useState('');
+  const [currentPage, setCurrentPage] = React.useState(1);
+  const [views, setViews] = React.useState('list');
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
+  const [taskToEdit, setTaskToEdit] = React.useState({});
+  const tasksPerPage = 4;
   return (
     <div className="root">
-      <TodosContext.Provider value={{ todos }}>
-        <TodoList />
-        <TodoResults />
+      <TodosContext.Provider value={{
+        todos,
+        setTodos,
+        filter,
+        setFilter,
+        searchQuery,
+        setSearchQuery,
+        currentPage,
+        setCurrentPage,
+        tasksPerPage,
+        views,
+        setViews,
+        isModalOpen,
+        setIsModalOpen,
+        taskToEdit,
+        setTaskToEdit,
+      }}
+      >
         <TodoForm />
+        <TodoList />
       </TodosContext.Provider>
     </div>
   );

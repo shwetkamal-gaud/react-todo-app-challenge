@@ -1,6 +1,5 @@
 .todo-list {
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(1,1,1,0.1);
+  padding: 10px 2rem;
 
   &-title {
     font-weight: 500;
@@ -8,7 +7,7 @@
     text-transform: uppercase;
     text-align: center;
     display: block;
-    border-bottom: 1px solid rgba(1,1,1,0.1);
+    border-bottom: 1px solid rgba(1, 1, 1, 0.1);
     padding: 5px 0;
     margin-bottom: 10px;
   }
@@ -24,4 +23,110 @@
   padding: 5px 0;
   font-size: 14px;
   color: gray;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.filter-buttons button,
+.view-toggle button {
+  margin-right: 0.5rem;
+}
+
+.grid-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+
+  @media (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+  }
+}
+
+.grid-items {
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid gray;
+
+  @media (max-width: 640px) {
+    width: 100%;
+  }
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border: 1px solid gray;
+  border-radius: 10px;
+
+  &-header {
+    padding: 13px;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+}
+
+.no-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.items {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 26vh;
+  overflow-y: auto;
+  @media (max-width: 640px) {
+    height: 20vh;
+  }
+}
+
+.pagination {
+  display: flex;
+  border-top: 1px solid gray;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+
+  button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+
+  span {
+    font-weight: 500;
+  }
+}
+
+.view-toggle {
+  @media (max-width: 640px) {
+    display: none;
+  }
 }
