@@ -51,29 +51,8 @@ These are optional but appreciated:
 To get started with the challenge, clone this repository, install dependencies, and run the app locally:
 
 ```bash
-git clone https://gitlab.com/parekhjigar/react-todo-app-challenge.git
-cd react-to-do-app-challenge
+git clone https://github.com/shwetkamal-gaud/react-todo-app-challenge.git
+cd react-todo-app-challenge
 npm install
 npm start
 ```
----
-## 📬 Submission Guide
-
-When you're done:
-
-1. Push your completed code to a **public Git repository** (GitHub, GitLab, etc.).
-2. Email the link to: **<jigar@bookanartist.co>**
-3. Include a short README in your repo with any notes about your implementation, improvements made, or assumptions.
-
-Please submit your solution within **3 days** of receiving the challenge.
-
----
-## ❓ Questions?
-Feel free to reach out to us if you have any doubts, questions, or run into technical issues.
-
-📧 Email: <jigar@bookanartist.co>
-
-We’re looking forward to seeing what you come up with.
-Good luck and have fun!
-
----
